@@ -1,0 +1,124 @@
+\documentclass[12pt]{article}
+\usepackage{caption}
+\usepackage{color}
+\usepackage{lscape}
+\usepackage{afterpage}
+\usepackage{pstricks}
+\usepackage{pst-plot}
+\usepackage{longtable}
+\usepackage{dcolumn}
+\usepackage{pst-node}
+\usepackage[dvips]{graphicx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{multirow}
+\usepackage{colortab}
+\usepackage{color}
+\usepackage{array}
+\usepackage{slashbox}
+\usepackage{colortbl}
+%\usepackage{shadbox}
+\usepackage{textcomp}
+\usepackage{pstricks, pst-node}
+\usepackage{pst-all}
+\usepackage{subfigure}
+\usepackage{tikz}
+\psset{arrows=->, labelsep=3pt, mnode=circle}
+
+\usepackage{eurosym}
+
+\usepackage[english]{babel}
+%\advance\textwidth by 4truecm
+%\advance\oddsidemargin by -2truecm
+\usepackage{amssymb}
+
+%\usepackage{fancyhdr}
+\usepackage{amsmath}
+\usepackage{color}
+
+\usepackage{graphics,latexsym,amsfonts}
+\usepackage{graphicx}
+\usepackage{pstricks, pst-node}
+\usepackage{pst-all}
+%\usepackage{pst-eucl}
+%\psset{arrows=->, labelsep=3pt, mnode=circle}
+\usepackage[round]{natbib}
+\usepackage{subfigure}
+\usepackage{eurosym}
+\usepackage{tikz}
+
+\newcommand{\rio}{\mathbb{R}}
+
+%la largeur
+\setlength{\textwidth}{18 cm} \setlength{\oddsidemargin}{-1cm}
+
+\setlength{\evensidemargin}{-1cm}
+%\addtolength{\marginparwidth}{-0.5 cm}
+
+
+
+%la hauteur
+\setlength{\headheight}{-1.5cm}
+%\addtolength{\footskip}{1.5 cm}
+\setlength{\textheight}{25cm}
+\newenvironment{resumeT}{\begin{list}{}{\setlength{\rightmargin}{\leftmargin}}\item[]
+{\centering {\bf \it~~~}
+\par}\item[]\ignorespaces}{\unskip\end{list}}
+% Serve per ridefinire l'ambiente itemize con i pallini, in modo da farlo stampare in Acrobat!
+\renewcommand{\labelitemi}{$\bullet$}
+
+
+\def\claim{\noindent {\it Claim: }}
+\def\proof{\noindent {\it Proof. }}
+\def\qed{\hfill\vrule height6pt width6pt depth1pt\medskip}
+
+\newtheorem{thm}{Theorem}
+
+\newtheorem{defn}{Definition}
+
+\newtheorem{lem}{Lemma}
+
+\newtheorem{rem}{Remark}
+
+\newtheorem{cor}{Corollary}
+
+\newtheorem{exmp}{Example}
+
+\begin{document}
+%\bibliographystyle{plainnat}
+
+
+\thispagestyle{empty}
+
+\begin{center}
+\large
+
+\textbf{Varianza Portfoglio}\\[1pt] 
+
+
+
+%\today
+\end{center}
+
+$\displaystyle \sigma^2_P=\sum_{i=1}^n\sum_{j=1}^nx_ix_j\sigma_{i,j}$
+
+
+Sviluppiamo la precedente espressione per semplificare quando $n=2$.
+
+
+$\displaystyle \sigma^2_P=\sum_{i=1}^2\sum_{j=1}^2 x_ix_j\sigma_{i,j}=x_1^2\sigma_1^2+x_2^2\sigma_2^2+2x_1x_2\sigma_{1,2}.$
+
+La precedente espressione la pu\'o anche scrivere come:
+
+
+$\displaystyle \sigma^2_P=\sum_{i=1}^2x^2_i\sigma^2_i+\sum_{i=1}^2\sum_{j=1(j\neq i)}^2 x_ix_j\sigma_{i,j}=x_1^2\sigma_1^2+x_2^2\sigma_2^2+2x_1x_2\sigma_{1,2}.$
+
+
+
+
+
+
+
+
+\end{document}
