@@ -1,0 +1,9 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Fri Jun  5 11:33:20 2020
+
+@author: utente
+"""
+
+
+Il sole è rosso
